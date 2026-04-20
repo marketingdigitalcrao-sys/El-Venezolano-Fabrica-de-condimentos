@@ -1,144 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avícola Palomino | Pollos a la Brasa en Ayacucho</title>
+  <meta name="description" content="Pollos a la brasa para reuniones y eventos en Ayacucho. Delivery rápido. Pide por WhatsApp." />
 
-<title>Pollos a la Brasa Palomino | Delivery en Ayacucho</title>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 
-<meta name="description" content="Pollos a la brasa para eventos, reuniones y delivery en Ayacucho. Pedidos por WhatsApp. Sabor único y calidad garantizada.">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
 
-<link rel="stylesheet" href="style.css">
-
-<style>
-body { text-align:center; font-family: Arial; }
-.container { max-width: 900px; margin:auto; padding:20px; }
-.btn { display:inline-block; padding:12px 20px; background:#e63946; color:#fff; text-decoration:none; border-radius:8px; margin-top:10px; }
-img { max-width:100%; border-radius:10px; }
-.section { margin:40px 0; }
-</style>
-
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <span class="logo">Avícola Palomino</span>
+    <a href="https://wa.me/51971608042" class="btn-nav">Pedir</a>
+  </div>
+</header>
+
 <!-- HERO -->
-<section class="section">
-<div class="container">
+<section class="hero">
+  <div class="hero-overlay"></div>
 
-<!-- IMAGEN PRINCIPAL -->
-<img src="pollo-a-la-brasa-ayacucho.jpg.jpg" alt="Pollos a la brasa Ayacucho">
+  <!-- CAMBIA ESTA IMAGEN POR LA TUYA -->
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" class="hero-bg" alt="pollo">
 
-<h1>Pollos a la Brasa Palomino</h1>
+  <div class="hero-content">
+    <h1>
+      Pollos a la Brasa en<br>
+      <span class="italic">Ayacucho</span>
+    </h1>
 
-<p>🔥 El mejor sabor para tus reuniones y eventos en Ayacucho</p>
+    <p>El sabor perfecto para tus reuniones y eventos</p>
 
-<a href="https://wa.me/51971608042?text=Hola,%20quiero%20pedir%20pollo"
-class="btn">
-📲 Pedir por WhatsApp
-</a>
-
-<p><strong>📞 971 608 042</strong></p>
-
-</div>
+    <a href="https://wa.me/51971608042" class="btn-main">
+      Pedir por WhatsApp
+    </a>
+  </div>
 </section>
 
-<!-- PRODUCTOS -->
-<section class="section">
-<div class="container">
+<!-- SERVICIOS -->
+<section class="section services">
+  <h2>Experiencias</h2>
 
-<h2>Nuestros Servicios</h2>
+  <div class="cards">
 
-<!-- 1 -->
-<img src="Para-tus-reuniones-familiares.jpg.jpg" alt="">
-<h3>Para tus reuniones familiares</h3>
-<p>Para tus reuniones familiares o antojitos, haz tu delivery rápido y seguro.</p>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
+      <h3>Reuniones</h3>
+      <p>Para tus reuniones familiares o antojitos</p>
+    </div>
 
-<!-- 2 -->
-<img src="Eventos-y-celebraciones.jpg.jpg" alt="">
-<h3>Eventos y celebraciones</h3>
-<p>El plato más vendido para fiestas de 15 años, matrimonios, promociones y cumpleaños.</p>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+      <h3>Eventos</h3>
+      <p>El plato ideal para fiestas y celebraciones</p>
+    </div>
 
-<!-- 3 -->
-<img src="Polladas-y-eventos-deportivos.jpg.jpg" alt="">
-<h3>Polladas y eventos deportivos</h3>
-<p>Todo listo para campeonatos, paseos y actividades grupales.</p>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600891963935-cb9b5cdbb1df">
+      <h3>Polladas</h3>
+      <p>Perfecto para campeonatos y actividades</p>
+    </div>
 
-</div>
+  </div>
 </section>
 
-<!-- BENEFICIOS -->
-<section class="section">
-<div class="container">
-
-<h2>¿Por qué elegirnos?</h2>
-
-<p>✔ Sabor único y casero</p>
-<p>✔ Atención rápida por WhatsApp</p>
-<p>✔ Ideal para eventos grandes</p>
-<p>✔ Delivery en Ayacucho centro y alrededores</p>
-
-</div>
+<!-- MANIFIESTO -->
+<section class="section dark">
+  <h2>
+    Lo normal es vender comida.<br>
+    Nosotros creamos <span class="italic">momentos</span>.
+  </h2>
 </section>
 
-<!-- UBICACION CON MAPA -->
-<section class="section">
-<div class="container">
-
-<h2>📍 Ubicación</h2>
-
-<p>
-AA. HH. Pokras III - Jr. Libertad Mza Z1 Lte 05<br>
-Ayacucho
-</p>
-
-<iframe 
-src="https://www.google.com/maps?q=Ayacucho&output=embed"
-width="100%" height="300" style="border:0;">
-</iframe>
-
-</div>
-</section>
-
-<!-- REDES -->
-<section class="section">
-<div class="container">
-
-<h2>Síguenos</h2>
-
-<p>
-<a href="https://www.tiktok.com/@comercializadoradeaves">TikTok</a><br>
-<a href="https://www.instagram.com/comercializadoradeavespalomino">Instagram</a><br>
-<a href="https://web.facebook.com/Avicolapalominoayacucho/">Facebook</a>
-</p>
-
-</div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="section">
-<div class="container">
-
-<h2>🔥 Haz tu pedido ahora</h2>
-
-<a href="https://wa.me/51971608042?text=Hola,%20quiero%20pedir%20pollo"
-class="btn">
-📲 Pedir por WhatsApp
-</a>
-
-<p><strong>📞 971 608 042</strong></p>
-
-</div>
+<!-- CTA -->
+<section class="section cta">
+  <h2>Haz tu pedido ahora</h2>
+  <a href="https://wa.me/51971608042" class="btn-main">Pedir ahora</a>
 </section>
 
 <!-- FOOTER -->
-<footer class="section">
-<div class="container">
-
-<p>© 2026 Pollos a la Brasa Palomino - Ayacucho</p>
-
-</div>
+<footer class="footer">
+  <p>© 2026 Avícola Palomino - Ayacucho</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
